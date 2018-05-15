@@ -1,0 +1,22 @@
+{
+  "name": "web-user",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@types/next": "^2.4.10",
+    "@zeit/next-typescript": "^1.0.0",
+    "next": "^6.0.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-markdown": "^3.3.2"
+  }
+}
