@@ -1,23 +1,28 @@
-import Document, { Head } from 'next/document'
+import Document, { Head } from 'next/document';
 
 export default class MyDocument extends Document {
   constructor(props) {
-    super(props)
-    const { __NEXT_DATA__ } = props
-    __NEXT_DATA__.strictHTML = true
+    super(props);
+    const { __NEXT_DATA__ } = props;
+    __NEXT_DATA__.strictHTML = true;
   }
 
   render() {
-    const { html } = this.props
+    const { html } = this.props;
     return (
       <html amp="" lang="en">
         <Head>
           <title>Johan Stenehall</title>
           <meta charSet="utf-8" />
-          <link rel="canonical" href="/" />
           <meta name="viewport" content="width=device-width,minimum-scale=1" />
-          <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-          <meta name="description" content="A developer building things, currently for Volvo creating new things." />
+          <meta
+            name="viewport"
+            content="width=device-width,minimum-scale=1,initial-scale=1"
+          />
+          <meta
+            name="description"
+            content="A developer building things, currently for Volvo creating new things."
+          />
           <link rel="canonical" href="https://stenehall.se" />
           <link rel="manifest" href="static/manifest.json" />
 
@@ -266,6 +271,6 @@ export default class MyDocument extends Document {
           <div id="__next" dangerouslySetInnerHTML={{ __html: html }} />
         </body>
       </html>
-    )
+    );
   }
 }

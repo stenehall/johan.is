@@ -1,7 +1,7 @@
-const ReactMarkdown = require('react-markdown')
+import ReactMarkdown from 'react-markdown'
 
-export default ({ name, url, content }) => (
-  <div>
+export default ({ id, name, url, content }) => (
+  <div key={id}>
     <h3>
       <a href={url}>{name}</a>
     </h3>

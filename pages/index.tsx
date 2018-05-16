@@ -127,16 +127,16 @@ export default () => [
       </address>
 
       <h2>🙈 Core skills</h2>
-      <ul className="inline">{core.map(item => <li>{item}</li>)}</ul>
+      <ul className="inline">{core.map((item, id) => <li key={id}>{item}</li>)}</ul>
 
       <h2>😍 The good</h2>
-      <ul className="inline">{good.map(item => <li>{item}</li>)}</ul>
+      <ul className="inline">{good.map((item, id) => <li key={id}>{item}</li>)}</ul>
 
       <h2>💩 The bad</h2>
-      <ul className="inline">{bad.map(item => <li>{item}</li>)}</ul>
+      <ul className="inline">{bad.map((item, id) => <li key={id}>{item}</li>)}</ul>
 
       <h2>🧗 The life</h2>
-      <ul className="inline">{life.map(item => <li>{item}</li>)}</ul>
+      <ul className="inline">{life.map((item, id) => <li key={id}>{item}</li>)}</ul>
     </aside>
   </main>,
   <footer>

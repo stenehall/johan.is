@@ -1,7 +1,7 @@
-const ReactMarkdown = require('react-markdown')
+import ReactMarkdown from 'react-markdown'
 
-export default ({ company, companyUrl, startTime, endTime, content }) => (
-  <section>
+export default ({ id, company, companyUrl, startTime, endTime, content }) => (
+  <section key={id}>
     <h2>
       <a href={companyUrl}>{company}</a>
     </h2>
