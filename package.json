@@ -1,12 +1,14 @@
 {
-  "name": "next_cv",
+  "name": "cv",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build && next export -o docs",
+    "start": "next start"
   },
-  "author": "",
+  "author": "Johan Stenehall",
   "license": "ISC",
   "dependencies": {
     "@zeit/next-typescript": "^1.0.0",

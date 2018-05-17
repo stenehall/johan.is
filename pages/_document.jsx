@@ -1,20 +1,18 @@
-import Document, { Head } from 'next/document';
+import Document, { Head } from 'next/document'
 
 export default class MyDocument extends Document {
   constructor(props) {
-    super(props);
-    const { __NEXT_DATA__ } = props;
-    __NEXT_DATA__.strictHTML = true;
+    super(props)
+    const { __NEXT_DATA__ } = props
+    __NEXT_DATA__.strictHTML = true
   }
 
   render() {
-    const { html } = this.props;
+    const { html } = this.props
     return (
       <html amp="" lang="en">
         <Head>
           <title>Johan Stenehall</title>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width,minimum-scale=1" />
           <meta
             name="viewport"
             content="width=device-width,minimum-scale=1,initial-scale=1"
@@ -24,34 +22,20 @@ export default class MyDocument extends Document {
             content="A developer building things, currently for Volvo creating new things."
           />
           <link rel="manifest" href="static/manifest.json" />
-
+          <link rel="canonical" href="/" />
           <style amp-boilerplate="">{`body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}`}</style>
           <noscript>
             <style amp-boilerplate="">{`body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}`}</style>
           </noscript>
           <script async src="https://cdn.ampproject.org/v0.js" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Fira+Mono:500,700"
+            rel="stylesheet"
+          />
           <style
             amp-custom=""
             dangerouslySetInnerHTML={{
               __html: `
-    @font-face {
-      font-family: 'Fira Mono';
-      font-style: normal;
-      font-weight: 400;
-      font-display: fallback;
-      src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v6/N0bX2SlFPv1weGeLZDtgJv7Ss9XZYQ.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-    @font-face {
-      font-family: 'Fira Mono';
-      font-style: normal;
-      font-weight: 700;
-      font-display: fallback;
-      src: local('Fira Mono Bold'), local('FiraMono-Bold'), url(https://fonts.gstatic.com/s/firamono/v6/N0bS2SlFPv1weGeLZDtondvHnvfUS5NBBA.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
     /* Milligram */
 
     *,
@@ -141,7 +125,7 @@ export default class MyDocument extends Document {
       left: -4px;
       bottom: -16px;
       width: 30px;
-      content: ';
+      content: "";
     }
 
     h2,
@@ -235,7 +219,6 @@ export default class MyDocument extends Document {
     }
 
     address {
-      text-style: normal;
       font-style: inherit;
     }
 
@@ -270,6 +253,6 @@ export default class MyDocument extends Document {
           <div id="__next" dangerouslySetInnerHTML={{ __html: html }} />
         </body>
       </html>
-    );
+    )
   }
 }
