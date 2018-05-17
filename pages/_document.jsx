@@ -28,10 +28,6 @@ export default class MyDocument extends Document {
             <style amp-boilerplate="">{`body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}`}</style>
           </noscript>
           <script async src="https://cdn.ampproject.org/v0.js" />
-          <link
-            href="https://fonts.googleapis.com/css?family=Fira+Mono:500,700"
-            rel="stylesheet"
-          />
           <style
             amp-custom=""
             dangerouslySetInnerHTML={{
@@ -98,6 +94,7 @@ export default class MyDocument extends Document {
     }
 
     /* Custom css */
+    @import url('https://fonts.googleapis.com/css?family=Fira+Mono:500,700');
 
     body {
       font: 140% monaco, 'Open Sans', "helvetica neue", helvetica, sans-serif;
