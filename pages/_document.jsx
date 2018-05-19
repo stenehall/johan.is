@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
             content="A developer building things, currently for Volvo creating new things."
           />
           <link rel="manifest" href="static/manifest.json" />
-          <link rel="canonical" href="http://localhost:3000/" />
+          <link rel="canonical" href="https://johan.is/" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -163,10 +163,10 @@ export default class MyDocument extends Document {
       padding: 4rem 2rem;
 
       /* Reset AMPs delay in showing content */
-      -webkit-animation:-amp-start .1s steps(1,end) 0s 1 normal both;
-      -moz-animation:-amp-start .1s steps(1,end) 0s 1 normal both;
-      -ms-animation:-amp-start .1s steps(1,end) 0s 1 normal both;
-      animation:-amp-start .1s steps(1,end) 0s 1 normal both
+      -webkit-animation:-amp-start .01s steps(1,end) 0s 1 normal both;
+      -moz-animation:-amp-start .01s steps(1,end) 0s 1 normal both;
+      -ms-animation:-amp-start .01s steps(1,end) 0s 1 normal both;
+      animation:-amp-start .01s steps(1,end) 0s 1 normal both
     }
 
     h1 a,
