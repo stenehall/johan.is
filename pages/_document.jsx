@@ -1,14 +1,14 @@
-import Document, { Head } from 'next/document'
+import Document, { Head } from 'next/document';
 
 export default class MyDocument extends Document {
   constructor(props) {
-    super(props)
-    const { __NEXT_DATA__ } = props
-    __NEXT_DATA__.strictHTML = true
+    super(props);
+    const { __NEXT_DATA__ } = props;
+    __NEXT_DATA__.strictHTML = true;
   }
 
   render() {
-    const { html } = this.props
+    const { html } = this.props;
     return (
       <html amp="" lang="en">
         <Head>
@@ -27,7 +27,6 @@ export default class MyDocument extends Document {
           <noscript>
             <style amp-boilerplate="">{`body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}`}</style>
           </noscript>
-          <script async src="https://cdn.ampproject.org/v0.js" />
           <style
             amp-custom=""
             dangerouslySetInnerHTML={{
@@ -265,6 +264,6 @@ export default class MyDocument extends Document {
           <div id="__next" dangerouslySetInnerHTML={{ __html: html }} />
         </body>
       </html>
-    )
+    );
   }
 }
