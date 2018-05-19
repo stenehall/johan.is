@@ -8,7 +8,7 @@ const minifyCss = strings => {
         .replace(/\s+/g, ' ')
         .replace(/: /g, ':')
         .replace(/; /g, ';')
-        .replace(/, /g, ',')
+        // .replace(/, /g, ',')
         .replace(/ {/g, '{')
         .replace(/{ /g, '{')
         .replace(/ }/g, '}')
