@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export -o docs",
+    "build": "next build && next export -o docs && cp CNAME docs/",
     "start": "next start"
   },
   "author": "Johan Stenehall",

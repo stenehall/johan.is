@@ -1,5 +1,24 @@
 import Document, { Head } from 'next/document'
 
+const minifyCss = strings => {
+  const minified = strings
+    .map(string =>
+      string
+        .replace(/\/\*.+?\*\//g, '')
+        .replace(/\s+/g, ' ')
+        .replace(/: /g, ':')
+        .replace(/; /g, ';')
+        .replace(/, /g, ',')
+        .replace(/ {/g, '{')
+        .replace(/{ /g, '{')
+        .replace(/ }/g, '}')
+        .replace(/} /g, '}')
+    )
+    .join('')
+
+  return minified
+}
+
 export default class MyDocument extends Document {
   constructor(props) {
     super(props)
@@ -76,9 +95,25 @@ export default class MyDocument extends Document {
           <style
             amp-custom=""
             dangerouslySetInnerHTML={{
-              __html: `
-    /* Milligram */
+              __html: minifyCss`
+    body {
+      font: 140% monaco, 'Open Sans', "helvetica neue", helvetica, sans-serif;
+      color: #444;
+      padding: 4rem 2rem;
 
+      font-size: 1.6em;
+      font-weight: 300;
+      letter-spacing: .01em;
+      line-height: 1.6;
+
+
+      /* Reset AMPs delay in showing content */
+      -webkit-animation:-amp-start .01s steps(1,end) 0s 1 normal both;
+      -moz-animation:-amp-start .01s steps(1,end) 0s 1 normal both;
+      -ms-animation:-amp-start .01s steps(1,end) 0s 1 normal both;
+      animation:-amp-start .01s steps(1,end) 0s 1 normal both
+    }
+    
     *,
     *:after,
     *:before {
@@ -89,15 +124,6 @@ export default class MyDocument extends Document {
       box-sizing: border-box;
       font-size: 75%;
       /* 62.5%; */
-    }
-
-    body {
-      color: #606c76;
-      font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-      font-size: 1.6em;
-      font-weight: 300;
-      letter-spacing: .01em;
-      line-height: 1.6;
     }
 
     a {
@@ -155,18 +181,6 @@ export default class MyDocument extends Document {
       font-display: fallback;
       src: local('Fira Mono Bold'), local('FiraMono-Bold'), url(https://fonts.gstatic.com/s/firamono/v6/N0bS2SlFPv1weGeLZDtondvHnvfUS5NBBA.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-    body {
-      font: 140% monaco, 'Open Sans', "helvetica neue", helvetica, sans-serif;
-      color: #444;
-      padding: 4rem 2rem;
-
-      /* Reset AMPs delay in showing content */
-      -webkit-animation:-amp-start .01s steps(1,end) 0s 1 normal both;
-      -moz-animation:-amp-start .01s steps(1,end) 0s 1 normal both;
-      -ms-animation:-amp-start .01s steps(1,end) 0s 1 normal both;
-      animation:-amp-start .01s steps(1,end) 0s 1 normal both
     }
 
     h1 a,
