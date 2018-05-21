@@ -1,8 +1,6 @@
 import Document, { Head } from 'next/document'
 import style from '../components/style'
 
-console.log(style)
-
 const minifyCss = string =>
   string
     .replace(/\/\*.+?\*\//g, '')

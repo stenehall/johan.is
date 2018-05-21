@@ -1,8 +1,11 @@
-export default () => (
+export default ({ children }) => (
   <footer>
-    <p>
-      <a href="mailto://johan@stenehall.se">johan@stenehall.se</a>
-      <br />
-    </p>
+    <div>
+      <p>
+        <a href="mailto://johan@stenehall.se">johan@stenehall.se</a>
+        <br />
+      </p>
+      {children}
+    </div>
   </footer>
 )
