@@ -79,6 +79,10 @@ header h1 {
   margin-bottom: 10px;
 }
 
+header a {
+  color: #fff;
+}
+
 /*
 header h1:after {
   border: 2px solid currentColor;
