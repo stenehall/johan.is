@@ -79,7 +79,7 @@ header h1 {
   margin-bottom: 10px;
 }
 
-header a {
+header p a {
   color: #fff;
 }
 
