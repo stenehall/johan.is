@@ -1,6 +1,6 @@
 import Work from './Work'
 import Project from './Project'
-import { works, projects, core, good, bad, life } from '../data'
+import { works, projects, core, good, bad, life, skills } from '../data'
 
 export default () => [
   <main>
@@ -45,6 +45,16 @@ export default () => [
         <h2>🧗 The life</h2>
         <ul className="inline">
           {life.map((item, id) => <li key={id}>{item}</li>)}
+        </ul>
+
+        <h2>Skills</h2>
+        <ul className="skills">
+          {skills.map((item, id) => (
+            <li key={id}>
+              {item[0]}
+              <span style={{ width: `${item[1]}px` }} />
+            </li>
+          ))}
         </ul>
       </aside>
     </div>

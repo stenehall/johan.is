@@ -1,18 +1,26 @@
 /* font: 140% 'Open Sans', 'helvetica neue', helvetica, sans-serif; */
 
 const style = `
+:root {
+  --heading: 400 2rem / 1.2 "EB Garamond", Serif;
+  --body: 400 2em / 1.5em "Roboto", Sans-Serif;
+  --color-accent: #fffdc3;
+  --color-accent2: #f1ffff;
+  --color-accent3: #b9c3c5;
+}
 html {
   /* background: #ebe9e4; */
+  /* background: linear-gradient(to bottom, #d65861 0%,#ec8d95 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #f5f5f5; //#fffdc3;
+
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
 body {
-  font: 400 2em / 1.5em 'Cardo', serif;
-
+  font: var(--body); //400 2em / 1.5em 'Cardo', serif;
   color: #45484d;
   border-radius: 8px;
-  margin: 0;
 
   letter-spacing: 0.01em;
 
@@ -21,6 +29,14 @@ body {
   -moz-animation: -amp-start 0.01s steps(1, end) 0s 1 normal both;
   -ms-animation: -amp-start 0.01s steps(1, end) 0s 1 normal both;
   animation: -amp-start 0.01s steps(1, end) 0s 1 normal both;
+
+  font-family: 'Roboto', sans-serif;
+  color: #545E6C;
+  background: #fff; //#f5f5f5;
+  font-size: 14px;
+  margin: 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 *,
@@ -46,11 +62,15 @@ p {
 h1,
 h2,
 h3 {
-  font-family: 'Open Sans', monospace;
-  font-weight: 400;
+  font: var(--heading);
   letter-spacing: -0.1rem;
   margin-bottom: 2rem;
   margin-top: 0;
+
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1,"kern";
+  font-kerning: normal;
+  letter-spacing: .02em;
 }
 
 h1 {
@@ -80,7 +100,7 @@ header h1 {
 }
 
 header p a {
-  color: #fff;
+  color: #000;
 }
 
 /*
@@ -153,8 +173,10 @@ main {
 }
 
 header {
-  background: #383545;
-  color: #eeedea;
+  /* background: var(--color-accent); //#383545; */
+  background-color: var(--color-accent2);
+
+  color: #555;
   padding: 50px 0;
 }
 
@@ -180,6 +202,10 @@ aside {
   grid-row: 1;
 }
 
+aside > h2 {
+  margin-top: 0;
+}
+
 .sub-grid h2 {
   grid-column: 1 / span 2;
 }
@@ -195,6 +221,33 @@ address {
 
 footer {
   margin-top: 3rem;
+}
+
+.skills {
+  padding: 0;
+}
+
+.skills li {
+  position: relative;
+  list-style: none;
+}
+
+.skills li + li {
+  margin-top: 1.5rem;
+}
+
+.skills span {
+  display: block;
+  background: var(--color-accent3);
+  height: 1.5rem;
+}
+
+.skills span:after {
+  content: '';
+  border: 1px solid var(--color-accent3);
+  width: 100%;
+  height: 1.5rem;
+  position: absolute;
 }
 
 @media screen and (min-width: 900px) {

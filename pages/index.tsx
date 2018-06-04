@@ -15,7 +15,7 @@ export default () => [
         __html: `
               WebFontConfig = {
                 google: {
-                  families: ['Open Sans:400', 'Cardo:400']
+                  families: ['EB Garamond:400i', 'Roboto:400']
                 }
               };
           

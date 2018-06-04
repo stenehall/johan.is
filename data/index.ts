@@ -89,8 +89,10 @@ const good = [
   'Reactive programming'
 ]
 
-const bad = ['.NET', '&lt;IE10', 'SOAP']
+const bad = ['.NET', '<IE10', 'SOAP']
 
 const life = ['Father', 'Boyfriend', 'Coder', 'Coffee drinker', 'climber']
 
-export { works, projects, core, good, bad, life }
+const skills = [['Python', 50], ['Javascript', 95]]
+
+export { works, projects, core, good, bad, life, skills }
