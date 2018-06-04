@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Header from '../components/Header'
 import Main from '../components/Main'
+import Footer from '../components/Footer'
 // import css from '../static/style.css'
 
 export default () => [
@@ -38,12 +38,6 @@ body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:non
 `}</style>
     </noscript>
   </Head>,
-  <Header author="Johan Stenehall" />,
   <Main />,
-  <footer>
-    <p>
-      <a href="mailto://johan@stenehall.se">johan@stenehall.se</a>
-      <br />
-    </p>
-  </footer>
+  <Footer />
 ]

@@ -2,8 +2,9 @@ export default ({ children }) => (
   <footer>
     <div>
       <p>
-        <a href="mailto://johan@stenehall.se">johan@stenehall.se</a>
-        <br />
+        <a href="https://github.com/stenehall/johan.is">
+          Want a similare CV? Just fork it.
+        </a>
       </p>
       {children}
     </div>
