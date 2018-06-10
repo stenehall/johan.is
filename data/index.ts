@@ -1,98 +1,129 @@
-const works = [
-  {
-    company: 'Volvo Car Mobility',
-    companyUrl: '',
-    startTime: '2018-03-08',
-    endTime: '',
-    content: `
-One morning, when Gregor Samsa woke from troubled dreams, he found
-himself transformed in his bed into a horrible vermin. 
- 
-He lay on his
-armour-like back, and if he lifted his head a little he could see his
-brown belly, slightly domed and divided by arches into stiff sections.
-The bedding was hardly able to cover it and seemed ready to slide off
-any moment.
+export default {
+  intro: `These are the latest employees I've had, along with what I like to work with. And what I'd prefer not to work with. 🍥`,
+  subHeading: 'Side projects',
+
+  works: [
+    {
+      company: 'Volvo Car Mobility',
+      companyUrl: '',
+      startTime: '2018-03-08',
+      endTime: '',
+      content: `
+Volvo Cars Mobility's mission is to offer personal access to cars and related services.
+Our vision is to enable more people to move: freely, meaningfully, sustainably.
+
+Working as a web developer I'm part of building something new and exciting. 
 `
-  },
-  {
-    company: 'iZettle',
-    companyUrl: 'https://izettle.com',
-    startTime: '2016-07-04',
-    endTime: '2018-03-07',
-    content: `
+    },
+    {
+      company: 'iZettle',
+      companyUrl: 'https://izettle.com',
+      startTime: '2016-07-04',
+      endTime: '2018-03-07',
+      content: `
 For many years iZettle have been pionering payments for small
 buisnesses.
 
-Working as a web developer I get to code on iZettle Portal as well as
-our front end for our new Invoice service and of course our main site.`
-  },
-  {
-    company: 'Narrative',
-    companyUrl: '',
-    startTime: '2014-07-04',
-    endTime: '2016-07-03',
-    content: `
+Working as a web developer I got to code on iZettle Portal as well as
+the front end for the Invoice service and of course the main site.`
+    },
+    {
+      company: 'Narrative',
+      companyUrl: 'http://getnarrative.com/',
+      startTime: '2014-07-04',
+      endTime: '2016-07-03',
+      content: `
 This Linköping based startup were once the biggest thing on
 Kickstarter.
 
-Working as the lead (and in the end only) front-end developer. I was
+Working as the lead front-end developer I was
 part of creating all web content. From the Narrative web app, to the
 main site, to the blog and support pages and much more.`
-  }
-]
+    },
+    {
+      company: 'Noc Webbyrå',
+      companyUrl: 'https://www.nocweb.se/',
+      startTime: '2009-10-01',
+      endTime: '2014-07-03',
+      content: `
+At Noc Webbyrå I had the opportunity to be part of big ad campaigns for companies like Sony, Adidas and IKEA but also to build and maintain systems for companies like Sectra, Volkswagen and Campushallen.
 
-const projects = [
-  {
-    name: '🌯 Life Hours',
-    url: '#',
-    content: `I simple and clean way to keep track of your work hours.`
+Working on big and small projects we either custom made solutions in PHP or Ruby or we built them on Wordpress or Drupal.`
+    }
+  ],
+  projects: [
+    {
+      name: '🌯 Life Hours',
+      url: '#',
+      content: `I simple and clean way to keep track of your work hours.`
+    },
+    {
+      name: '🥠 Name filtering',
+      url: '#',
+      content: `Find the name you want for you kid.`
+    },
+    {
+      name: '🍪 Blog',
+      url: '#',
+      content: `I like the idea of blogging, I just don't do it very often.`
+    },
+    {
+      name: '🍫 Fluid photogrid',
+      url: 'https://stenehall.github.io/photo-grid/',
+      content: `Create fluid photo grids like flickr, with less javascript and proper scaling.`
+    }
+  ],
+  asides: {
+    '😍 The good': [
+      'Modern ECMAScript',
+      'CSS3 without old IE',
+      'TypeScript',
+      'Functional programming',
+      'Reactive programming'
+    ],
+    '🧗 The life': ['Father', 'Boyfriend', 'Coder', 'Coffee drinker', 'climber']
   },
-  {
-    name: '🥠 Name filtering',
-    url: '#',
-    content: `Find the name you want for you kid.`
+  skills: {
+    '🙈 Core skills': [
+      ['HTML(5)', 100],
+      ['(S)CSS(3)', 95],
+      ['Javascript', 95],
+      ['TypeScript', 85],
+      ['Node.js', 95],
+      ['React', 90],
+      ['VUE', 75],
+      ['Angular', 75],
+      ['Docker', 75],
+      ['Wordpress', 95]
+    ]
   },
-  {
-    name: '🍪 Blog',
-    url: '#',
-    content: `I like the idea of blogging, I just don't do it very often.`
-  },
-  {
-    name: '🍫 Fluid photogrid',
-    url: 'https://stenehall.github.io/photo-grid/',
-    content: `Create fluid photo grids like flickr, with less javascript and proper scaling.`
-  }
-]
-
-const core = [
-  'HTML(5)',
-  'CSS(3)',
-  'Javascript',
-  'TypeScript',
-  'Node.js',
-  'React',
-  'Vue',
-  'Angular',
-  'Wordpress',
-  'Drupal',
-  'Ruby',
-  'RoR',
-  'Docker'
-]
-
-const good = [
-  'Modern ECMAScript',
-  'CSS3 without old IE',
-  'TypeScript',
-  'Functional programming',
-  'Reactive programming'
-]
-
-const bad = ['.NET', '<IE10', 'SOAP']
-
-const life = ['Father', 'Boyfriend', 'Coder', 'Coffee drinker', 'climber']
-
-const skills = [['Python', 50], ['Javascript', 95]]
-
-export { works, projects, core, good, bad, life, skills }
+  cloud: [
+    'Angular',
+    'BEM',
+    'CodeIgniter',
+    'CSS(3)',
+    'Docker',
+    'Drupal',
+    'Drupal',
+    'Git',
+    'GraphQL',
+    'HTML(5)',
+    'Javascript',
+    'Jekyll',
+    'Joomla',
+    'jQuery',
+    'LESS',
+    'MySQL',
+    'Node.js',
+    'PHP',
+    'React',
+    'REST',
+    'RoR',
+    'Ruby',
+    'SCSS',
+    'TypeScript',
+    'Vue',
+    'Vue',
+    'Wordpress'
+  ]
+}
