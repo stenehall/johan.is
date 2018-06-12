@@ -1,5 +1,7 @@
 export default {
-  intro: `These are the latest employees I've had, along with what I like to work with. And what I'd prefer not to work with. 🍥`,
+  intro: `A skilled web developer with a love of clean and simple code. Comfortable coding both front end and back end. While being goal oriented also enjoying writing [highly optimized code, like this](/static/lighthouse.html).
+
+ 🍥`,
   subHeading: 'Side projects',
 
   works: [

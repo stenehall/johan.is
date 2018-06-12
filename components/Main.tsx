@@ -1,3 +1,4 @@
+import ReactMarkdown from 'react-markdown'
 import Header from '../components/Header'
 import Work from './Work'
 import Project from './Project'
@@ -9,7 +10,7 @@ export default () => [
   <main>
     <Header author="Johan Stenehall" />
     <article>
-      <p>{intro}</p>
+      <ReactMarkdown source={intro} />
 
       {works.map((work, id) => <Work id={id} {...work} />)}
 

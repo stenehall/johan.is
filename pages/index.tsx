@@ -13,7 +13,8 @@ export default () => [
         __html: `
               WebFontConfig = {
                 google: {
-                  families: ['EB Garamond:400i', 'Roboto:400']
+                  //Fanwood+Text:400,400i|Quattrocento:400,700
+                  families: ['Quattrocento:400', 'Fanwood Text:400']
                 }
               };
           

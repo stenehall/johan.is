@@ -2,8 +2,8 @@
 
 const style = `
 :root {
-  --heading: 400 2rem / 1.2 "EB Garamond", Serif;
-  --body: 400 1em / 1.5em "Roboto", Sans-Serif;
+  --heading: 400 2rem / 1.2 Quattrocento, Sans-Serif;
+  --body: 400 1em / 1.5em 'Fanwood Text', Sans-Serif;
   --color-accent: #fffdc3;
   --color-accent2: #f6d2d6;
   --color-accent3: #b9c3c5;
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font: var(--body); //400 2em / 1.5em 'Cardo', serif;
+  font: var(--body);
   color: var(--color-base);
 
   letter-spacing: 0.01em;
@@ -30,7 +30,6 @@ body {
   -ms-animation: -amp-start 0.01s steps(1, end) 0s 1 normal both;
   animation: -amp-start 0.01s steps(1, end) 0s 1 normal both;
 
-  // font-family: 'Roboto', sans-serif;
   color: #545E6C;
   margin: 0;
 }
@@ -70,7 +69,7 @@ h3 {
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.2;
 }
 
