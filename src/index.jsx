@@ -58,7 +58,7 @@ export class Index extends React.Component {
             property="og:image"
             content="https://johan.is/static/og-image.jpg"
           />
-          <link rel="amphtml" href="https://johan.is/amp/" />
+          <link rel="amphtml" href="https://johan.is/amp.html" />
         </head>
         <body className={styles.body}>
           <Main />
