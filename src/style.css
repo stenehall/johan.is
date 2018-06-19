@@ -1,0 +1,24 @@
+/* :root {
+  --heading: 400 2rem / 1.2 Quattrocento, Sans-Serif;
+  --body: 400 1em / 1.5em 'Fanwood Text', Sans-Serif;
+  --color-accent: #fffdc3;
+  --color-accent2: #f6d2d6;
+  --color-accent3: #b9c3c5;
+  --color-base: #45484d;
+} */
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+p {
+  margin-top: 0;
+}
+
+p > a {
+  color: #000;
+  text-decoration: underline;
+  text-underline-position: under;
+}

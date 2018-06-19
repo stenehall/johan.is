@@ -1,3 +1,4 @@
-.next
+!dist/bundle.css
+!dist/bundle.css.log
+!dist/bundle.js
 node_modules
-docs/_next

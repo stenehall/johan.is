@@ -1,0 +1,151 @@
+.heading {
+  font: 400 2rem / 1.2 Quattrocento, Sans-Serif;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern' 1, 'kern';
+  font-kerning: normal;
+  letter-spacing: 0.02em;
+}
+
+.footer {
+  margin: 2em auto;
+  text-align: center;
+}
+
+.header {
+  background: #f6d2d6;
+  padding: 3rem 3rem 2rem 2rem;
+  color: #555;
+}
+
+.time {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8em;
+}
+
+/* .title {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+} */
+
+.subtitle {
+  margin: 0;
+}
+
+@media screen and (min-width: 650px) {
+  .header {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+}
+
+.main {
+  background: #fff;
+  display: block;
+}
+
+.article,
+.aside {
+  padding: 2rem;
+}
+
+.address {
+  font-style: inherit;
+  margin: 1rem 0 2rem;
+}
+
+.skills {
+  padding: 0;
+}
+
+.skillsLi {
+  position: relative;
+  display: block;
+  list-style: none;
+  border: 1px solid #45484d;
+  width: 100%;
+  padding: 1px;
+  color: #f6d2d6;
+}
+
+.skillsLi + .skillsLi {
+  margin-top: 0.5rem;
+}
+
+.skillsSpan100,
+.skillsSpan95,
+.skillsSpan85,
+.skillsSpan90,
+.skillsSpan75 {
+  display: block;
+  background: #45484d;
+  padding: 0 0 0 2px;
+  font-size: 0.8em;
+  line-height: 1.6;
+}
+
+.skillsSpan100 {
+  width: 100%;
+}
+.skillsSpan95 {
+  width: 95%;
+}
+.skillsSpan90 {
+  width: 90%;
+}
+.skillsSpan85 {
+  width: 85%;
+}
+.skillsSpan75 {
+  width: 75%;
+}
+
+.subGridHeading {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+@media screen and (min-width: 650px) {
+  .footer {
+    margin: 0 auto;
+  }
+
+  .main {
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+
+  .article {
+    padding: 3rem 2rem 3rem 3rem;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+  }
+
+  .aside {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background: #f6d2d6;
+    padding: 0 3rem 3rem 2rem;
+  }
+
+  .subGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
