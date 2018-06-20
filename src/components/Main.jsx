@@ -68,7 +68,7 @@ export default () => [
     <aside className={styles.aside}>
       <H2Aside>👋 Contact</H2Aside>
       <address className={styles.address}>
-        <a href="mailto://johan@stenehall.se">johan@stenehall.se</a>
+        <Link href="mailto://johan@stenehall.se">johan@stenehall.se</Link>
         <br />
         Stockholm, Sweden<br />
         <b>@stenehall</b>

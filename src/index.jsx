@@ -69,18 +69,19 @@ export class Index extends React.Component {
                 google: {
                   families: ['Quattrocento:400', 'Fanwood Text:400']
                 }
-              }
-              (function(d) {
+              };
+          
+              (d => {
                   var wf = d.createElement('script'), s = d.scripts[0]
                   wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'
                   wf.async = true
                   s.parentNode.insertBefore(wf, s)
               })(document)
 
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js', {scope: './'}).then(registration => {}, err => {})})
-      }
-      `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js', {scope: './'}).then(registration => {}, err => {}))
+              }
+            `
             }}
           />
         </body>
