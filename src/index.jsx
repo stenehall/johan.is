@@ -59,6 +59,10 @@ export class Index extends React.Component {
             content="https://johan.is/static/og-image.jpg"
           />
           <link rel="amphtml" href="https://johan.is/amp.html" />
+          <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; img-src 'none'; script-src https://ajax.googleapis.com 'unsafe-inline' 'self' ; style-src http://fonts.googleapis.com 'unsafe-inline'; font-src http://fonts.gstatic.com;"
+          />
         </head>
         <body className={styles.body}>
           <Main />
