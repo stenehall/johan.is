@@ -7,6 +7,10 @@
   --color-base: #45484d;
 } */
 
+html {
+  margin: 0;
+}
+
 *,
 *:after,
 *:before {

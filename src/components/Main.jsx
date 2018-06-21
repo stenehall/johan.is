@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
+import { Helmet } from 'react-helmet'
+
 // import Header from './Header'
 // import Work from './Work'
 // import Project from './Project'
