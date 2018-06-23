@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const React = require('react')
 const ReactDOMServer = require('react-dom/server')
-var uglifycss = require('uglifycss')
+const uglifycss = require('uglifycss')
 const Helmet = require('react-helmet').Helmet
 
 const Pages = require('./docs/bundle')
@@ -15,9 +15,10 @@ var uglified = uglifycss.processFiles(
   }
 )
 
-const styleTag = (html, key) => {
+const styleTag = key => {
   let styleString = uglified
   if (key === 'Amp') {
+    // Because AMP really is so very broken.
     styleString += `@font-face {
       font-family: 'Cardo';
       font-style: normal;
@@ -56,7 +57,7 @@ Object.keys(Pages).map(key => {
     ${helmet.script.toString().replace(regexp, '')}
     ${helmet.style.toString().replace(regexp, '')}
     ${helmet.noscript.toString().replace(regexp, '')}
-    ${styleTag(renderedStaticMarkup, key)}
+    ${styleTag(key)}
   </head>
   ${renderedStaticMarkup}
 </html>`

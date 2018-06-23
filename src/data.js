@@ -7,7 +7,7 @@ export default {
   works: [
     {
       company: 'Volvo Car Mobility',
-      companyUrl: '',
+      companyUrl: 'https://www.volvocars.com/',
       startTime: '2018-03-08',
       endTime: '',
       content: `

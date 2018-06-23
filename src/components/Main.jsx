@@ -1,11 +1,5 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
-import { Helmet } from 'react-helmet'
-
-// import Header from './Header'
-// import Work from './Work'
-// import Project from './Project'
-// import Footer from './Footer'
 import { H1, H2, H2Aside, H3, UlInline, LiInline, Link } from './Typography'
 import data from '../data'
 
@@ -35,11 +29,11 @@ export default () => [
 
       {works.map((work, id) => (
         <section key={id}>
-          <h2 className={typography.h2}>
+          <H2>
             <a className={typography.headerLink} href={work.companyUrl}>
               {work.company}
             </a>
-          </h2>
+          </H2>
           <time className={styles.time}>
             {work.startTime} — {work.endTime}
           </time>
@@ -88,11 +82,6 @@ export default () => [
       {Object.keys(skills).map(title => [
         <H2Aside>{title}</H2Aside>,
         <ul className={styles.skills}>
-          {/* {skills[title].map((item, id) => (
-            <li key={id} className={styles.skillsLi}>
-              <span className={styles[`skillsSpan${item[1]}`]}>{item[0]}</span>
-            </li>
-          ))} */}
           <li className={styles.skillsLi}>
             <span className={styles.skillsSpan100}>HTML(5)</span>
           </li>
