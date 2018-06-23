@@ -3,6 +3,8 @@ const path = require('path')
 const React = require('react')
 const ReactDOMServer = require('react-dom/server')
 const uglifycss = require('uglifycss')
+const minify = require('html-minifier').minify
+
 const Helmet = require('react-helmet').Helmet
 
 const Pages = require('./docs/bundle')
@@ -62,8 +64,18 @@ Object.keys(Pages).map(key => {
   ${renderedStaticMarkup}
 </html>`
 
+    const minifiedHtml = minify(html, {
+      removeAttributeQuotes: true,
+      removeEmptyAttributes: true,
+      sortAttributes: true,
+      sortClassName: true,
+      preserveLineBreaks: true,
+      collapseWhitespace: true,
+      collapseBooleanAttributes: true
+    })
+
     const htmlPath = `docs/${key.toLowerCase()}.html`
-    fs.writeFile(path.resolve(htmlPath), html, err => {
+    fs.writeFile(path.resolve(htmlPath), minifiedHtml, err => {
       if (err) {
         return console.log(err)
       }

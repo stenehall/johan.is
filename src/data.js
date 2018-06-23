@@ -1,5 +1,5 @@
 export default {
-  intro: `A skilled web developer with a love of clean and simple code. Comfortable coding both front end and back end. While being goal oriented also enjoying writing [highly optimized code, like this](/static/desktop-no-throttling.html).
+  intro: `A skilled web developer with a love of clean and simple code. Comfortablecoding both front end and back end. While being goal oriented also enjoying writing [highly optimized code, like this](/static/desktop-no-throttling.html).
 
  🍥`,
   subHeading: 'Side projects',
@@ -11,8 +11,7 @@ export default {
       startTime: '2018-03-08',
       endTime: '',
       content: `
-Volvo Cars Mobility's mission is to offer personal access to cars and related services.
-Our vision is to enable more people to move: freely, meaningfully, sustainably.
+Volvo Cars Mobility's mission is to offer personal access to cars and related services. Our vision is to enable more people to move: freely, meaningfully, sustainably.
 
 Working as a web developer I'm part of building something new and exciting. 
 `
@@ -23,11 +22,9 @@ Working as a web developer I'm part of building something new and exciting.
       startTime: '2016-07-04',
       endTime: '2018-03-07',
       content: `
-For many years iZettle have been pionering payments for small
-buisnesses.
+For many years iZettle have been pionering payments for small buisnesses.
 
-Working as a web developer I got to code on iZettle Portal as well as
-the front end for the Invoice service and of course the main site.`
+Working as a web developer I got to code on iZettle Portal as well as the front end for the Invoice service and of course the main site.`
     },
     {
       company: 'Narrative',
@@ -35,12 +32,9 @@ the front end for the Invoice service and of course the main site.`
       startTime: '2014-07-04',
       endTime: '2016-07-03',
       content: `
-This Linköping based startup were once the biggest thing on
-Kickstarter.
+This Linköping based startup were once the biggest thing on Kickstarter.
 
-Working as the lead front-end developer I was
-part of creating all web content. From the Narrative web app, to the
-main site, to the blog and support pages and much more.`
+Working as the lead front-end developer I was part of creating all web content. From the Narrative web app, to the main site, to the blog and support pages and much more.`
     },
     {
       company: 'Noc Webbyrå',
