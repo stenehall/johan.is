@@ -1,5 +1,5 @@
 export default {
-  intro: `A skilled web developer with a love of clean and simple code. Comfortable coding both front end and back end. While being goal oriented also enjoying writing [highly optimized code, like this](/static/lighthouse.html).
+  intro: `A skilled web developer with a love of clean and simple code. Comfortable coding both front end and back end. While being goal oriented also enjoying writing [highly optimized code, like this](/static/desktop-no-throttling.html).
 
  🍥`,
   subHeading: 'Side projects',
