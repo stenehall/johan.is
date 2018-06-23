@@ -99,10 +99,6 @@
   display: inline;
 }
 
-.LiInline:after {
+.LiInline:nth-child(n + 2):before {
   content: ', ';
-}
-
-.LiInline:last-child:after {
-  content: '';
 }
