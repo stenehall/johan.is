@@ -15,7 +15,7 @@ export default ({ children }) => (
         name="description"
         content="A developer building things, currently for Volvo creating new things."
       />
-      <link rel="manifest" href="static/manifest.json" />
+      <link rel="manifest" href="/static/manifest.json" />
       <link rel="canonical" href="https://johan.is/" />
       <link
         rel="apple-touch-icon"

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=development webpack && node static.js "
+    "build": "NODE_ENV=development webpack && node static.js",
+    "build:watch": "nodemon -w src/ --exec 'npm run build'"
   },
   "dependencies": {
     "@css-blocks/jsx": "^0.19.0",

@@ -74,12 +74,17 @@ Object.keys(Pages).map(key => {
       collapseBooleanAttributes: true
     })
 
-    const htmlPath = `docs/${key.toLowerCase()}.html`
-    fs.writeFile(path.resolve(htmlPath), minifiedHtml, err => {
+    let htmlPath = 'docs'
+    if (key.toLowerCase() !== 'index') {
+      htmlPath = `docs/${key.toLowerCase()}`
+    }
+
+    !fs.existsSync(htmlPath) && fs.mkdirSync(htmlPath)
+    fs.writeFile(path.resolve(htmlPath + '/index.html'), minifiedHtml, err => {
       if (err) {
         return console.log(err)
       }
-      console.log(`Saving: ${htmlPath}`)
+      console.log(`Saving: ${htmlPath}/index.html`)
     })
   } catch (error) {
     console.log(`Error: '${error}'\nProperty: '${key}'`)
