@@ -1,6 +1,7 @@
 ## Todo
 
-- [ ] Robots.txt
+- [x] Robots.txt
+- [x] humans.txt
 - [ ] XML Sitemap
 - [ ] Better meta description, include name and make 70-320 chars
 - [ ] Improve keywords? "web developer" for example

@@ -1,0 +1,15 @@
+
+/* TEAM */
+
+
+Your title: Johan Stenehall.
+Twitter: @stenehall
+Location: Stockholm, Sweden.
+
+/* SITE */
+
+
+Last update: 2018/07/17
+Standards: HTML5, CSS3
+Components: Static HTML rendered from React, optimized CSS rendered via CSS-blocks
+Software: Vim, Atom, VS Code

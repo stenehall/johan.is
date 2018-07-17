@@ -1,4 +1,6 @@
 export default {
+  domain: 'https://johan.is',
+  title: 'Johan Stenehall',
   intro: `A skilled web developer with a love of clean and simple code. Comfortablecoding both front end and back end. While being goal oriented also enjoying writing [highly optimized code, like this](/static/desktop-no-throttling.html).
 
  🍥`,
@@ -13,7 +15,7 @@ export default {
       content: `
 Volvo Cars Mobility's mission is to offer personal access to cars and related services. Our vision is to enable more people to move: freely, meaningfully, sustainably.
 
-Working as a web developer I'm part of building something new and exciting. 
+Working as a web developer I'm part of building something new and exciting.
 `
     },
     {

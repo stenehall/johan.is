@@ -1,11 +1,12 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import data from '../data'
 import styles from './Body.block.css'
 
 export default ({ children }) => (
   <body className={styles.body}>
     <Helmet encodeSpecialCharacters={false}>
-      <title>Johan Stenehall</title>
+      <title>{data.title}</title>
       <meta charSet="utf-8" />
       <meta
         name="viewport"
@@ -16,7 +17,7 @@ export default ({ children }) => (
         content="A developer building things, currently for Volvo creating new things."
       />
       <link rel="manifest" href="/static/manifest.json" />
-      <link rel="canonical" href="https://johan.is/" />
+      <link rel="canonical" href={data.domain} />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -35,8 +36,12 @@ export default ({ children }) => (
       <meta property="og:image:height" content="863" />
       <meta
         property="og:image"
-        content="https://johan.is/static/og-image.jpg"
+        content={`${data.domain}/static/og-image.jpg`}
       />
+
+    <link rel="author" href="humans.txt" />
+
+    <link type="text/plain" rel="author" href={`${data.domain}/humans.txt`} />
     </Helmet>
     {children}
   </body>
