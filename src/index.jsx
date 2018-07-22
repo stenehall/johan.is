@@ -15,6 +15,11 @@ export const Index = () => (
       />
     </Helmet>
     <Main />
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `if ('serviceWorker' in navigator) {window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js', {scope: './'}))}`
+      }}
+    />
   </Body>
 )
 
