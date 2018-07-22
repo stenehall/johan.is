@@ -16,18 +16,18 @@ let subheading = objstr({
 })
 
 export default () => [
+  <header className={styles.header}>
+    <div className={styles.headerInner}>
+      <H1>Johan Stenehall</H1>
+      <p className={styles.subtitle}>
+        A developer building things,{' '}
+        <a href="http://google.com">currently for Volvo</a> creating new
+        things.
+      </p>
+      <ReactMarkdown source={intro} />
+    </div>
+  </header>,
   <main className={styles.main}>
-    <header className={styles.header}>
-      <div className={styles.headerInner}>
-        <H1>Johan Stenehall</H1>
-        <p className={styles.subtitle}>
-          A developer building things,{' '}
-          <a href="http://google.com">currently for Volvo</a> creating new
-          things.
-        </p>
-        <ReactMarkdown source={intro} />
-      </div>
-    </header>
     <div className={styles.wrap}>
       <div className={styles.wrapMain}>
         <article className={styles.article}>
