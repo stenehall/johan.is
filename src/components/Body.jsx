@@ -16,6 +16,8 @@ export default ({ children }) => (
         name="description"
         content="A developer building things, currently for Volvo creating new things."
       />
+      <meta name="referrer" content="origin" />
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
       <link rel="manifest" href="/static/manifest.json" />
       <link rel="canonical" href={data.domain} />
       <link
@@ -39,9 +41,9 @@ export default ({ children }) => (
         content={`${data.domain}/static/og-image.jpg`}
       />
 
-    <link rel="author" href="humans.txt" />
+      <link rel="author" href="humans.txt" />
 
-    <link type="text/plain" rel="author" href={`${data.domain}/humans.txt`} />
+      <link type="text/plain" rel="author" href={`${data.domain}/humans.txt`} />
     </Helmet>
     {children}
   </body>
